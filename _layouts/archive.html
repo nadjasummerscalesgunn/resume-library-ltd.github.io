@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="header center">Archive</h1>
+        <div class="row">
+            {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
+            <ul>
+            {% for year in postsByYear %}
+                <li>
+                    <h2>{{ year.name }}</h2>
+                    <ul>
+                    {% assign postsByYearMonth = year.items | group_by_exp:"post", "post.date | date: '%b'"  %}
+                    {% for month in postsByYearMonth %}
+                        <li>
+                            <h4>{{ month.name }}</h4>
+                            <ul>
+                                {% for post in month.items %}
+                                    <li>
+                                        {% assign d = post.date | date: "%-d" %}
+                                        {{ post.date | date: "%B" }}
+                                        {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+                                        {{ post.date | date: "%Y" }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

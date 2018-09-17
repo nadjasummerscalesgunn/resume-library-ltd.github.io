@@ -1,0 +1,115 @@
+*, html{
+    color:#444;
+}
+
+a{
+    color:#005da4;
+}
+
+nav{
+    box-shadow: none;
+}
+
+.page-footer{
+    padding-top:0;
+}
+
+nav .button-collapse i{
+    color:#fff;
+}
+
+.side-nav{
+    background:#0a2d5f;
+
+    li a{
+        color:#fff;
+    }
+}
+
+code, pre {
+    padding: 0 3px 2px;
+    font-family: monospace;
+    font-size: 12px;
+    color: #333333;
+    border-radius: 3px;
+}
+
+code {
+    padding: 2px 4px;
+    color: #d14;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    white-space: nowrap;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    code {
+        padding: 0;
+        color: inherit;
+        white-space: pre;
+        white-space: pre-wrap;
+        background-color: transparent;
+        border: 0;
+    }
+}
+
+/* syntax highlighting */
+.hll { background-color: #ffffcc }
+.c  { color: #0099FF; font-style: italic }
+.err { color: #AA0000; background-color: #FFAAAA }
+.k, .kc, .kd, .kn, .kr { color: #006699; font-weight: bold }
+.o  { color: #555555 }
+.c1, .cm { color: #0099FF; font-style: italic }
+.cp { color: #009999 }
+.cs { color: #0099FF; font-weight: bold; font-style: italic }
+.gd { background-color: #FFCCCC; border: 1px solid #CC0000 }
+.ge { font-style: italic }
+.gr { color: #FF0000 }
+.gh { color: #003300; font-weight: bold }
+.gi { background-color: #CCFFCC; border: 1px solid #00CC00 }
+.go { color: #AAAAAA }
+.gp { color: #000099; font-weight: bold }
+.gs { font-weight: bold }
+.gu { color: #003300; font-weight: bold }
+.gt { color: #99CC66 }
+.kp { color: #006699 }
+.kt { color: #007788; font-weight: bold }
+.m  { color: #FF6600 }
+.na { color: #330099 }
+.nb { color: #336666 }
+.nc { color: #00AA88; font-weight: bold }
+.no { color: #336600 }
+.nd { color: #9999FF }
+.ni { color: #999999; font-weight: bold }
+.ne { color: #CC0000; font-weight: bold }
+.nf { color: #CC00FF }
+.nl { color: #9999FF }
+.nn { color: #00CCFF; font-weight: bold }
+.nt { color: #330099; font-weight: bold }
+.nv { color: #003333 }
+.ow { color: #000000; font-weight: bold }
+.w  { color: #bbbbbb }
+.mf, .mh, .mi, .mo { color: #FF6600 }
+.s, .sb, .sc, .sd, .s1, .s2, .se, .sh, .sx { color: #CC3300 }
+.sd { font-style: italic }
+.se { font-weight: bold }
+.si { color: #AA0000 }
+.sr { color: #33AAAA }
+.ss { color: #FFCC33 }
+.bp { color: #336666 }
+.vc, .vg, ,.vi { color: #003333 }
+.il { color: #FF6600 }
